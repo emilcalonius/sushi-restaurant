@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
+html {
+  font-size: 16px;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 #navbar {
@@ -13,6 +19,7 @@
 #restaurant-name {
   color: white;
   padding: 10px;
+  cursor: pointer;
 }
 
 #bar1,
@@ -41,17 +48,32 @@
 
 #menu-button {
   padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
-.menu {
+@media (hover: hover) {
+  #menu-button:hover {
+    background-color: rgb(65, 65, 65);
+  }
+
+  li:hover {
+    background-color: rgb(65, 65, 65);
+  }
+}
+
+#menu {
   list-style-type: none;
-  padding: 10px;
-  height: 0px;
   transition: height ease 0.3s;
 }
 
-.menu.open {
-  height: fit-content;
+#menu[data-state="closed"] {
+  height: 0px;
+  overflow: hidden;
+}
+
+#menu[data-state="open"] {
+  height: 152px;
 }
 
 header {
@@ -64,17 +86,7 @@ li {
   align-items: center;
   justify-content: center;
   padding: 10px;
-}
-@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
-html {
-  font-size: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  cursor: pointer;
 }
 
 #hero {
