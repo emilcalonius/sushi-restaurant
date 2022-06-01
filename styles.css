@@ -15,7 +15,9 @@
   padding: 10px;
 }
 
-#bar1, #bar2, #bar3 {
+#bar1,
+#bar2,
+#bar3 {
   width: 35px;
   height: 5px;
   background-color: white;
@@ -28,7 +30,9 @@
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change #bar2 {opacity: 0;}
+.change #bar2 {
+  opacity: 0;
+}
 
 .change #bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -51,7 +55,7 @@
 }
 
 header {
-  background-color:rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 li {
@@ -60,4 +64,53 @@ li {
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#hero {
+  background-image: url("./assets/images/jakub-dziubak-iOHJKJqO6E0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  min-width: 100%;
+  min-height: 500px;
+  height: 60vh;
+  position: relative;
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero-text {
+  color: white;
+  font-size: 8vw;
+  letter-spacing: 7px;
+  margin-bottom: 10px;
+}
+
+.btn-styled {
+}
+
+.background-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: radial-gradient(
+    rgba(39, 39, 39, 0.349),
+    rgba(5, 5, 5, 0.719)
+  );
 }
