@@ -39,15 +39,18 @@
   padding: 10px;
 }
 
-.menu {
+#menu {
   list-style-type: none;
-  padding: 10px;
-  height: 0px;
   transition: height ease 0.3s;
 }
 
-.menu.open {
-  height: fit-content;
+#menu[data-state="closed"] {
+  height: 0px;
+  overflow: hidden;
+}
+
+#menu[data-state="open"] {
+  height: 152px;
 }
 
 header {
