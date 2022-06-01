@@ -13,6 +13,7 @@
 #restaurant-name {
   color: white;
   padding: 10px;
+  cursor: pointer;
 }
 
 #bar1, #bar2, #bar3 {
@@ -37,6 +38,18 @@
 
 #menu-button {
   padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+@media (hover: hover) {
+  #menu-button:hover {
+    background-color: rgb(65, 65, 65);
+  }
+
+  li:hover {
+    background-color: rgb(65, 65, 65);
+  }
 }
 
 #menu {
@@ -63,4 +76,5 @@ li {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  cursor: pointer;
 }
