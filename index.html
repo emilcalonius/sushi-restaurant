@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>Rice & Shine</title>
+    <title>Rice N Shine</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png"/>
     <meta charset="UTF-8" />
     <meta name="description" content="Very cool sushi restaurant" />
@@ -20,7 +20,7 @@
   <body>
     <header>
       <div id="navbar">
-        <h1 id="restaurant-name">Rice N Shine</h1>
+        <h1 id="restaurant-name"><a href="#hero">Rice N Shine</a></h1>
         <div id="menu-button" onclick="openMenu()">
           <div id="bar1"></div>
           <div id="bar2"></div>
@@ -28,10 +28,10 @@
         </div>
       </div>
       <ul id="menu" data-state="closed">
-        <li>Aukioloajat</li>
-        <li>Menu</li>
-        <li>Galleria</li>
-        <li>Sijainti</li>
+        <li><a href="#section-2" onclick="openMenu()">Aukioloajat</a></li>
+        <li><a onclick="openMenu()">Menu</a></li>
+        <li><a onclick="openMenu()">Galleria</a></li>
+        <li><a onclick="openMenu()">Sijainti</a></li>
       </ul>
     </header>
     <main>
@@ -44,8 +44,29 @@
           <button class="btn-styled">Menu</button>
         </div>
       </section>
-      <section>
+      <section id="section-2">
         <!-- aukioloajat ja perustietoa-->
+        <div class="info-container">
+          <p class="basic-info">
+            Rice N Shine on tarjoillut kaupungin maukkaimpia susheja jo vuodesta 2003.
+            Ravintolan tunnelma on viihtyisä sekä rauhallinen.
+            Tervetuloa nauttimaan kaupungin parhaista susheista.
+          </p>
+        </div>
+        <div class="img-container-1"></div>
+        <div class="img-container-2"></div>
+        <div class="opening-hours-container">
+          <h3>Aukioloajat</h3>
+          <p class="opening-hours">
+            Ma 10-21<br>
+            Ti 10-21<br>
+            Ke 10-21<br>
+            To 10-21<br>
+            Pe 10-21<br>
+            La 11-20<br>
+            Su 12-18
+          </p>
+        </div>
       </section>
       <!-- välikuva tähän-->
       <section>

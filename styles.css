@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -94,6 +95,14 @@ li {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
 #hero {
   background-image: url("./assets/images/jakub-dziubak-iOHJKJqO6E0-unsplash.jpg");
   background-repeat: no-repeat;
@@ -101,7 +110,7 @@ li {
   background-position: 50%;
   min-width: 100%;
   min-height: 500px;
-  height: 60vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -130,4 +139,69 @@ li {
     rgba(39, 39, 39, 0.349),
     rgba(5, 5, 5, 0.719)
   );
+}
+
+#section-2 {
+  width: 100vw;
+  height: calc(100vh - 59px);
+  display: grid;
+  grid-template-areas: 
+  "a b"
+  "c d";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.img-container-1 {
+  background-image: url("./assets/images/cath-smith-U3FD3M8mCC0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  grid-area: c;
+}
+
+.img-container-2 {
+  background-image: url("./assets/images/kofookoo-de-mFiWJIBB3AU-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  grid-area: b;
+}
+
+.info-container {
+  grid-area: a;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-hours-container {
+  grid-area: d;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  padding-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+p {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 50vw;
+}
+
+.info-container p {
+  font-weight: 100;
 }
