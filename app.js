@@ -7,3 +7,12 @@ function openMenu() {
   const menu = document.getElementById("menu");
   menu.dataset.state == "open" ? menu.dataset.state = "closed" : menu.dataset.state = "open";
 }
+
+// Hide navbar when scrolling down
+let prevYPos = window.pageYOffset;
+window.onscroll = () => {
+  let currentYpos = window.pageYOffset;
+  const navbar = document.getElementById("navbar")
+  prevYPos > currentYpos ? navbar.dataset.visibility = "visible" : navbar.dataset.visibility = "hidden";
+  prevYPos = currentYpos;
+}

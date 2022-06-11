@@ -2,7 +2,6 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  scroll-padding-top: 59px;
 }
 
 * {
@@ -17,6 +16,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: height 0.2s;
+}
+
+#navbar[data-visibility="visible"] {
+  height: 59px;
+}
+
+#navbar[data-visibility="hidden"] {
+  height: 0px;
 }
 
 #restaurant-name {
@@ -164,7 +172,7 @@ a:visited {
 }
 
 #section-2 {
-  height: calc(100vh - 59px);
+  height: 100vh;
   display: grid;
   grid-template-areas: 
   "a b"
