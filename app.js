@@ -1,5 +1,5 @@
 // Handles opening and closing of menu by clicking hamburger icon
-function openMenu() {
+function toggleMenu() {
   // Toggle between hamburger menu or x icons
   document.getElementById("menu-button").classList.toggle("change");
 
